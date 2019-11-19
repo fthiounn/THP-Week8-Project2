@@ -28,12 +28,20 @@ $(document).ready(function() {
   ************************************************************************/
   // display the modal
   var modal = document.getElementById("loginModal");
-  var btn = document.getElementById("login");
+  var loginbtn = document.getElementById("login");
+  var signupbtn = document.getElementById("signup");
   var span = document.getElementById("close-modal");
 
   // When the user clicks the button, open the modal 
-  btn.onclick = function() {
+  loginbtn.onclick = function() {
     modal.style.display = "block";
+    $("#login-content").removeClass("d-none");
+    $("#signup-content").addClass("d-none");
+  }
+  signupbtn.onclick = function() {
+    modal.style.display = "block";
+    $("#signup-content").removeClass("d-none");
+    $("#login-content").addClass("d-none");
   }
 
   // When the user clicks on <span> (x), close the modal
@@ -47,16 +55,23 @@ $(document).ready(function() {
       modal.style.display = "none";
     }
   }
-
-  // // closing the modal
-  // $('#close-modal').onclick = function() {
-  //   modal.style.display = "none";
-  // }
-  // window.onclick = function(event) {
-  //   if (event.target == $('#loginModal')) {
-  //     $('#loginModal').style.display = "none";
-  //   }
-  // }
+  /************************************************************************
+  MODAL TABS
+  ************************************************************************/
+  $('.login-tab').on('click', function(event){
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    $("#login-content").removeClass("d-none");
+    $("#signup-content").addClass("d-none");
+    console.log("holà");
+  });
+  $('.signup-tab').on('click', function(event){
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    $("#signup-content").removeClass("d-none");
+    $("#login-content").addClass("d-none");
+    console.log("holà");
+  });
 
 
 });

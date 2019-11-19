@@ -19,4 +19,5 @@ $(document).ready(function() {
     $('#' + event.target.textContent).removeClass("d-none");
     console.log("handler called");
   });
+  
 });
