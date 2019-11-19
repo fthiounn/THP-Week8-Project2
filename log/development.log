@@ -8427,3 +8427,143 @@ To customize the errors styles please run `rails g devise:views` and modify the
 Completed 200 OK in 116ms (Views: 110.3ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-11-19 17:18:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mCategory Load (17.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/_task_form.html.erb:18
+  Rendered layouts/_task_form.html.erb (21.5ms)
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (1.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 3]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/index.html.erb:27
+  Rendered home/index.html.erb within layouts/application (62.6ms)
+  Rendered devise/sessions/_new.html.erb (4.2ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations__new_html_erb__2589091357277460309_70143265473420 at /Users/F/Documents/THP/THP/Week 8/THP-Week8-Project2/app/views/devise/registrations/_new.html.erb:3)
+  Rendered devise/registrations/_new.html.erb (3.5ms)
+  Rendered layouts/_modals.html.erb (27.1ms)
+  Rendered layouts/_navbar.html.erb (36.7ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 2494ms (Views: 2468.6ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-19 17:19:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/_task_form.html.erb:18
+  Rendered layouts/_task_form.html.erb (2.8ms)
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 3]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/index.html.erb:27
+  Rendered home/index.html.erb within layouts/application (13.7ms)
+  Rendered devise/sessions/_new.html.erb (2.1ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations__new_html_erb__2589091357277460309_70143223828000 at /Users/F/Documents/THP/THP/Week 8/THP-Week8-Project2/app/views/devise/registrations/_new.html.erb:3)
+  Rendered devise/registrations/_new.html.erb (2.2ms)
+  Rendered layouts/_modals.html.erb (10.5ms)
+  Rendered layouts/_navbar.html.erb (15.9ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 96ms (Views: 89.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-19 17:19:18 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/_task_form.html.erb:18
+  Rendered layouts/_task_form.html.erb (2.5ms)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 3]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/index.html.erb:27
+  Rendered home/index.html.erb within layouts/application (10.6ms)
+  Rendered devise/sessions/_new.html.erb (1.8ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations__new_html_erb__2589091357277460309_70143291989880 at /Users/F/Documents/THP/THP/Week 8/THP-Week8-Project2/app/views/devise/registrations/_new.html.erb:3)
+  Rendered devise/registrations/_new.html.erb (2.0ms)
+  Rendered layouts/_modals.html.erb (9.6ms)
+  Rendered layouts/_navbar.html.erb (14.6ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 63.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-19 17:19:44 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/_task_form.html.erb:18
+  Rendered layouts/_task_form.html.erb (2.6ms)
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 3]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/index.html.erb:27
+  Rendered home/index.html.erb within layouts/application (15.5ms)
+  Rendered devise/sessions/_new.html.erb (2.2ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations__new_html_erb__2589091357277460309_70143274743120 at /Users/F/Documents/THP/THP/Week 8/THP-Week8-Project2/app/views/devise/registrations/_new.html.erb:3)
+  Rendered devise/registrations/_new.html.erb (2.5ms)
+  Rendered layouts/_modals.html.erb (10.8ms)
+  Rendered layouts/_navbar.html.erb (14.5ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 74.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-19 17:20:32 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/_task_form.html.erb:18
+  Rendered layouts/_task_form.html.erb (7.2ms)
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."category_id" = $1[0m  [["category_id", 3]]
+  ↳ app/views/home/index.html.erb:13
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/index.html.erb:27
+  Rendered home/index.html.erb within layouts/application (29.9ms)
+  Rendered devise/sessions/_new.html.erb (2.2ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations__new_html_erb__2589091357277460309_70143266702980 at /Users/F/Documents/THP/THP/Week 8/THP-Week8-Project2/app/views/devise/registrations/_new.html.erb:3)
+  Rendered devise/registrations/_new.html.erb (5.3ms)
+  Rendered layouts/_modals.html.erb (14.0ms)
+  Rendered layouts/_navbar.html.erb (19.0ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 151ms (Views: 140.1ms | ActiveRecord: 4.4ms)
+
+
