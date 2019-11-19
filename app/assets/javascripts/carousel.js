@@ -44,7 +44,6 @@ $(document).ready(function() {
     indicator.find(`#`+index).addClass("text-danger");
   }
   function select(index){
-    console.log(index)
     position = index;
     carousel.find("img").replaceWith(imgTab.get(position));
   }

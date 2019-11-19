@@ -2,12 +2,12 @@
 <%= render 'layouts/task_form'  %>
 <ul class="nav nav-pills">
   <% @categories.each do  |category|%>
-    <li class="btn category-name btn-primary m-1"><%= category.title  %></li>
+    <li class="btn category-name btn-primary m-1" id="<%= category.id %>"><%= category.title  %></li>
   <%end%>
 </ul>
 <div class="tab-content">
   <% @categories.each do  |category|%>
-    <div id="<%= category.title  %>" class="card category-content">
+    <div id="content-<%= category.id  %>" class="card category-content">
       <h3 class="card-title"><%= category.title  %></h3>
       <ul class= "card-content">
         <% category.tasks.each do |task|  %>
