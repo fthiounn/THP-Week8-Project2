@@ -15,9 +15,7 @@ $(document).ready(function() {
     event.stopImmediatePropagation();
     // on cache toutes les tab puis on ajoute la bonne
     $(".category-content").addClass("d-none");
-    console.log(event.target.textContent);
     $('#' + event.target.textContent).removeClass("d-none");
-    console.log("handler called");
   });
-  
+
 });

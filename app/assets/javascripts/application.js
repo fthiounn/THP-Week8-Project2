@@ -57,20 +57,18 @@ $(document).ready(function() {
   }
   /************************************************************************
   MODAL TABS
-  ************************************************************************/
+  ************************************************************************/ 
   $('.login-tab').on('click', function(event){
     event.stopPropagation();
     event.stopImmediatePropagation();
     $("#login-content").removeClass("d-none");
     $("#signup-content").addClass("d-none");
-    console.log("holà");
   });
   $('.signup-tab').on('click', function(event){
     event.stopPropagation();
     event.stopImmediatePropagation();
     $("#signup-content").removeClass("d-none");
     $("#login-content").addClass("d-none");
-    console.log("holà");
   });
 
 

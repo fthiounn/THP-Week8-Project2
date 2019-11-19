@@ -1,3 +1,4 @@
+
 @import "variables/personal_variables";
 @import "variables/bootstrap_variables";
 
@@ -5,7 +6,9 @@
 @import "font-awesome";
 @import "components/*";
 
-/* The Modal (background) */
+/*****************************
+The Modal
+*****************************/
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -42,4 +45,13 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/*****************************
+CAROUSEL
+*****************************/
+.img-container{
+    position: relative;
+    display: inline-block;
+    margin:5px;
 }

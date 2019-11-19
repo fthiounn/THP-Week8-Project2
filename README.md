@@ -3,8 +3,7 @@
 
 ### Notes & Use
 
->
->
+> Heroku : 
 
 
 ## Projet : Faire des manipulations de DOMs avec jQuery
